@@ -35,7 +35,7 @@ services:
       - hostname: ''
         priority: 1
         protocol: tcp
-        service: nginx
+        service: webapp
         source_port: $ext_port
         target_port: 80
     health_check:
