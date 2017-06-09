@@ -32,7 +32,7 @@ services:
     lb_config:
       certs: []
       port_rules:
-      - hostname: 'demo.kudamono.info'
+      - hostname: ''
         priority: 1
         protocol: http
         service: webapp
