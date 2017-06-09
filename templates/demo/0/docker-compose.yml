@@ -12,5 +12,6 @@ services:
     ports:
     - $ext_port:$ext_port/tcp
     labels:
+      io.rancher.scheduler.affinity:host_label: availability_zone=groupb
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
