@@ -32,7 +32,7 @@ services:
     lb_config:
       certs: []
       port_rules:
-      - hostname: ''
+      - hostname: 'demo.rancher.jp2.kudamono.info'
         priority: 1
         protocol: http
         service: webapp
