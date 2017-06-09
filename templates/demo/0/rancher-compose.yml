@@ -9,14 +9,14 @@
     - variable: "scale_number"
       description: |
         Scale Number 
-      label: "Nginx Scale Number:"
+      label: "Webapp Scale Number:"
       default: "1"
       required: true
       type: "int"
     - variable: "ext_port"
       description: |
         External Port
-      label: "HAProxy External Port:"
+      label: "LoadBalancer External Port:"
       default: "8080"
       required: true
       type: "int"
@@ -37,7 +37,7 @@ services:
         protocol: tcp
         service: webapp
         source_port: $ext_port
-        target_port: 80
+        target_port: 8080
     health_check:
       response_timeout: 2000
       healthy_threshold: 2
