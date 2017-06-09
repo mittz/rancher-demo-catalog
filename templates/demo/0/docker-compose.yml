@@ -1,0 +1,16 @@
+version: '2'
+services:
+  webapp:
+    image: mittz/testwebapp:latest
+    stdin_open: true
+    tty: true
+    labels:
+      testwebapp.role: app
+      io.rancher.container.hostname_override: container_name
+  loadbalancer:
+    image: rancher/lb-service-haproxy:v0.6.2
+    ports:
+    - $ext_port:$ext_port/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
