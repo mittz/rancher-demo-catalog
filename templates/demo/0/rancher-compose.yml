@@ -23,7 +23,7 @@
 
 version: '2'
 services:
-  nginx:
+  webapp:
     scale: $scale_number
     start_on_create: true
   lb:
