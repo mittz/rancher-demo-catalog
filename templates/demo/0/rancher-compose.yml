@@ -34,7 +34,7 @@ services:
       port_rules:
       - hostname: ''
         priority: 1
-        protocol: tcp
+        protocol: http
         service: webapp
         source_port: $ext_port
         target_port: 8080
@@ -43,4 +43,4 @@ services:
       healthy_threshold: 2
       port: 42
       unhealthy_threshold: 3
-interval: 2000
+      interval: 2000
