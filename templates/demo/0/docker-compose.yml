@@ -1,7 +1,7 @@
 version: '2'
 services:
   webapp:
-    image: mittz/testwebapp:latest
+    image: mittz/testwebapp-bin:latest
     stdin_open: true
     tty: true
     labels:
