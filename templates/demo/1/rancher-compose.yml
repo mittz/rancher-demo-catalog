@@ -4,7 +4,7 @@
     (Training) Catalog Demo
   version: 0.2
   minimum_rancher_version: v1.0.0
-  maintainer: "Rancher-CN <rancher-cn@outlook.com>"
+  maintainer: "NTTCom Demo <demo@example.com>"
   questions:
     - variable: "scale_number"
       description: |
