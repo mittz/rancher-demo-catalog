@@ -9,7 +9,6 @@ services:
       io.rancher.container.hostname_override: container_name
   loadbalancer:
     image: rancher/lb-service-haproxy:v0.6.2
-    network_mode: host
     ports:
     - $ext_port:$ext_port/tcp
     labels:
